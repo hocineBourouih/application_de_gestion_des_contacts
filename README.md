@@ -27,5 +27,4 @@ ce qui peut réduire considérablement le temps de chargement de l'application.
 sans avoir besoin d'une connexion Internet. Il vous suffit de télécharger le dossier et lancer l'app.
 
 - cette application de gestion de contacts est un outil pratique et facile à utiliser pour gérer vos contacts en ligne. 
-Avec son formulaire complet, ses options de tri, sa fonctionnalité de stockage local et son exécution en local, cette application est 
-un must-have pour tous ceux qui cherchent à organiser leurs contacts de manière efficace.
+Avec son formulaire complet, ses options de tri, sa fonctionnalité de stockage local et son exécution en local.
