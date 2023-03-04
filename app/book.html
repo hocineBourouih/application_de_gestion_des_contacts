@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carnet d'adresses</title>
+    <!--<link type="text/css" rel="stylesheet" href="book.css" />-->
+    <script src="book/address-book.js"></script>
+    <script src="chance.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        main > section {
+            box-sizing: border-box;
+            min-height: 500px;
+        }
+
+        #details {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #liste {
+            width: 100%;
+            margin-top: 20px;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        #liste tr {
+            padding: 5px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        #liste td {
+            padding: 5px;
+        }
+
+        #liste tr:nth-child(even) {
+            background-color: #9CAFD4;
+        }
+
+        #details div {
+            margin: 10px auto;
+        }
+
+        #no-show {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin: 5px auto;
+        }
+
+        label input[type="text"] {
+            width: 250px;
+        }
+
+        label span {
+            float: left;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Carnet d'adresses</h1>
+</header>
+<main>
+    <section id="carnet">
+        <div><button id="ajouter">Ajouter un contact</button></div>
+        <table id="liste">
+            <tr><th id="nom">Nom</th><th>Surnom</th><th>Prénom</th></tr>
+        </table>
+    </section>
+    <section id="details">
+    </section>
+</main>
+
+
+<!-- le formulaire est mis en display none avec CSS et sert de "modèle" pour le formulaire de création/modification -->
+<div id="no-show">
+    <form>
+        <input type="hidden" name="id"/>
+        <label><span>Nom</span> <input type="text" name="nom" placeholder="Nom"/></label>
+        <label><span>Prenom</span> <input type="text" name="prenom" placeholder="Prénom"/></label>
+        <label><span>Pseudo</span> <input type="text" name="pseudo" placeholder="Pseudo"/></label>
+        <label><span>Email</span><input type="text" name="email" placeholder="Email"/></label>
+        <label><span>Téléphone</span> <input type="text" name="telephone" placeholder="Téléphone"/></label>
+        <label><input type="submit" name="go" value="Enregistrer"/></label>
+    </form>
+</div>
+
+<script src="book.js"></script>
+
+</body>
+</html>
